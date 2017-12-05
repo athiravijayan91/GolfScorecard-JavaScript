@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2JAJrF0qtr1oCvvmv08UQisPUxe6NOvo&libraries=places&callback=initMap">
+    </script>
+    <script src="ajax1.js" ></script>
+    <script src="jquerryscorecard.js" ></script>
+    <link rel="stylesheet" type="text/css" href="finalgolfscorecardstylesheet.css">
+    <style>
+    </style>
+</head>
+<body background="golf-wallpaper.jpg" >
+<div class="title">Golf Scorecard</div>
+<div class="dropdown">
+    <input id="pac-input" type="text" placeholder="Enter a location" size="50px">
+
+    <div class="selectcourse">
+        <select id="location" onchange="getCourseInfo(this.value);"></select>
+    </div>
+
+    <div id="infowindow-content">
+        <img src="" width="16" height="16" id="place-icon">
+        <span id="place-name"  class="title"></span><br>
+        <span id="place-address"></span>
+    </div>
+
+    <div class="selectcourse" >
+        <form action="#" >
+        </form>
+        <select id="selectTeebox" onchange=" setCourseInfo(this.value)"></select>
+    </div>
+</div>
+<div class="mid">
+    <div id="map_canvas" ></div>
+    <script type="text/javascript">
+        function getHolePins(id) {
+            var course_id = document.getElementById('location').value;
+            var sel = document.getElementById('selectTeebox');
+            var text = sel.options[sel.selectedIndex].text;
+            setHolePins(course_id, id, text);
+        }
+    </script>
+    <div id="holelist">
+        <option value="HOLES">Holes</option>
+        <option value="1" onclick="getHolePins(1);">1</option>
+        <option value="1" onclick="getHolePins(2);">2</option>
+        <option value="1" onclick="getHolePins(3);">3</option>
+        <option value="1" onclick="getHolePins(4);">4</option>
+        <option value="1" onclick="getHolePins(5);">5</option>
+        <option value="1" onclick="getHolePins(6);">6</option>
+        <option value="1" onclick="getHolePins(7);">7</option>
+        <option value="1" onclick="getHolePins(8);">8</option>
+        <option value="1" onclick="getHolePins(9);">9</option>
+        <option value="1" onclick="getHolePins(10);">10</option>
+        <option value="1" onclick="getHolePins(11);">11</option>
+        <option value="1" onclick="getHolePins(12);">12</option>
+        <option value="1" onclick="getHolePins(13);">13</option>
+        <option value="1" onclick="getHolePins(14);">14</option>
+        <option value="1" onclick="getHolePins(15);">15</option>
+        <option value="1" onclick="getHolePins(16);">16</option>
+        <option value="1" onclick="getHolePins(17);">17</option>
+        <option value="1" onclick="getHolePins(18);">18</option>
+
+    </div>
+    <div class="weather" id="weather">
+
+        <div class ="rightdiv">
+        <div class="weatherContent">
+            <div id = "golfcoursename"></div>
+            <div id="membershiptype"></div>
+
+            <div class="rankg">
+                <div class="grank"> </div>
+                <div id="globalrank"></div>
+            </div>
+            <div class="rankl">
+                <div class="lrank"> </div>
+                <div id="localrank"></div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="faran">
+            <div id = "conditions"></div>
+            <img id = "theicon" src=""/>
+
+            <div class="ti">
+
+            <div id="currenttemp"></div>
+                <div class="degsign"></div>
+
+            </div>
+        </div>
+
+
+        </div>
+
+        <div class=" address">
+
+            <div class="adcontent">
+            <div id="addr"></div>
+            <div id = "cityname"></div>
+            <div id="state"></div>
+            <div id="country"></div>
+            <div id="zip"></div>
+            <div id="website"></div>
+            <div id="phonenum"></div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div class="button">
+    <a href="#" id="myButton"> Add Player</a>
+</div>
+
+
+
+
+<div  class = "scorecardbox">
+    <div class="HOLE" id="Hole">Hole<div class="yard" id="YARD">Yardage</div><div class="par" id="PAR">Par</div><div class="HCP">Handicap</div></div>
+    <div class="hole" id="1">1<div id="yard1" class="yard">0</div><div id="holepar1" class="par">0</div><div id="hcp1" class="hcp">0</div></div>
+    <div class="hole" id="2">2<div id="yard2" class="yard">0</div><div id="holepar2" class="par">0</div><div id="hcp2" class="hcp">0</div></div>
+    <div class="hole" id="3" >3<div id="yard3" class="yard">0</div><div id="holepar3" class="par">0</div><div id="hcp3" class="hcp">0</div></div>
+    <div class="hole" id="4">4<div id="yard4" class="yard">0</div><div  id="holepar4" class="par">0</div><div id="hcp4" class="hcp">0</div></div>
+    <div class="hole" id="5">5<div id="yard5" class="yard">0</div><div  id="holepar5" class="par">0</div><div id="hcp5" class="hcp">0</div></div>
+    <div class="hole" id="6">6<div id="yard6" class="yard">0</div><div  id="holepar6" class="par">0</div><div id="hcp6" class="hcp">0</div></div>
+    <div class="hole" id="7">7<div id="yard7" class="yard">0</div><div  id="holepar7" class="par">0</div><div id="hcp7" class="hcp">0</div></div>
+    <div class="hole" id="8">8<div  id="yard8" class="yard">0</div><div  id="holepar8" class="par">0</div><div id="hcp8" class="hcp">0</div></div>
+    <div class="hole" id="9">9<div id="yard9" class="yard" >0</div><div  id="holepar9" class="par" >0</div><div id="hcp9" class="hcp">0</div></div>
+    <div class="hole" id="Out">Out<div class="yard" id="yardOut">0</div><div class="par" id="parOut">0</div><div class="hcp" id="hcpOut">0</div></div>
+    <div class="hole" id="10">10<div id="yard10" class="yard">0</div><div  id="holepar10" class="par">0</div><div id="hcp10" class="hcp">0</div></div>
+    <div class="hole" id="11">11<div  id="yard11" class="yard">0</div><div id="holepar11" class="par">0</div><div id="hcp11" class="hcp">0</div></div>
+    <div class="hole" id="12" >12<div id="yard12" class="yard" >0</div><div id="holepar12" class="par">0</div><div id="hcp12" class="hcp">0</div></div>
+    <div class="hole" id="13">13<div id="yard13" class="yard" >0</div><div id="holepar13" class="par">0</div><div id="hcp13" class="hcp">0</div></div>
+    <div class="hole" id="14">14<div  id="yard14" class="yard">0</div><div id="holepar14"  class="par" >0</div><div id="hcp14" class="hcp">0</div></div>
+    <div class="hole" id="15">15<div id="yard15" class="yard">0</div><div id="holepar15" class="par">0</div><div id="hcp15" class="hcp">0</div></div>
+    <div class="hole" id="16">16<div id="yard16" class="yard">0</div><div id="holepar16" class="par">0</div><div id="hcp16" class="hcp">0</div></div>
+    <div class="hole" id="17">17<div id="yard17" class="yard">0</div><div id="holepar17" class="par">0</div><div id="hcp17" class="hcp">0</div></div>
+    <div class="hole" id="18">18<div id="yard18" class="yard">0</div><div id="holepar18" class="par">0</div><div id="hcp18" class="hcp">0</div></div>
+    <div class="hole" id="In">In<div class="yard" id="yardIn">0</div><div class="par" id="parIn">0</div><div class="hcp" id="hcpIn">0</div></div>
+    <div class="hole" id="Total">Total<div class="yard" id="yardTotal">0</div ><div class="par" id="parTotal">0</div><div class="hcp" id="hcpTotal">0</div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,398 @@
+
+#container{
+
+
+
+
+}
+
+.title{
+
+    padding: 10px;
+    margin-left: 40%;
+    font-size:40px;
+
+}
+
+.scorecardbox {
+
+    width: 70%;
+    height: 130px;
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    padding: 15px;
+    margin-top: 1%;
+    margin-left: 14.2%;
+
+}
+
+.yard,.par,.hcp,.HCP{
+    margin-top: 20px;
+
+}
+
+#Hole{
+
+    color: darkred;
+    font-weight: 900;
+
+
+}
+#Out,#In,#Total{
+
+    color: crimson;
+
+}
+
+
+.hole{
+
+    padding: 1px;
+    margin: 0 auto;
+
+}
+
+.Textbox{
+
+    background-color: lightsalmon;
+    margin-top: 40px;
+    width: 40px;
+    height: 35px;
+    font-size: 15px;
+
+}
+
+
+.playerntextbox{
+
+    background-color: lightcoral;
+    margin-top: 40px;
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+}
+
+.dropdown{
+
+    margin-left: 40px;
+    display: flex;
+}
+
+
+#selectTeebox{
+
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+.removebtn{
+    padding-right: 10px;
+    color: orangered;
+}
+
+
+#map {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 600px;
+    height: 400px
+}
+
+
+
+.selectcourse{
+
+    display: flex;
+
+    margin-left: 12.3%;
+
+}
+
+
+#map_canvas {
+
+
+    width: 35%;
+    height: 400px;
+
+    margin-top:1.8% ;
+    margin-left: 14.2%;
+}
+.mid{
+   display: flex;
+}
+
+.weather{
+
+   width: 33.5%;
+
+   margin-left: 1%;
+   margin-top: 2%;
+
+}
+
+.rightdiv{
+
+    display: flex;
+    background-color: #29bbff;
+    height:45%;
+    width: 100%;
+}
+.weatherContent{
+
+     width:50%;
+    height:50%;
+    padding-left: 20%;
+    padding-top: 3.5%;
+
+
+}
+
+#cityname{
+
+    font-size: 100%;
+
+
+}
+
+
+#golfcoursename{
+
+
+    font-size: 160%;
+
+}
+#membershiptype{
+
+    margin-top: 4%;
+    font-size: 120%;
+    color: orangered;
+}
+
+#conditions{
+
+    margin-top: 4%;
+    font-size: 125%;
+
+}
+.icon{
+
+    display: block;
+}
+
+#theicon{
+
+
+
+
+}
+
+.faran{
+
+    display: block;
+    margin-left: 8%;
+    margin-top: 4%;
+
+}
+.ti{
+    display: flex;
+
+}
+
+.rankg{
+
+    display: flex;
+    color: darkgreen;
+
+    margin-top: 4%;
+
+}
+
+.rankl{
+
+    display: flex;
+    color: darkgreen;
+}
+
+
+#currenttemp{
+
+
+   font-size: 300%;
+
+
+}
+.degsign{
+
+    font-size: 250%;
+
+}
+
+.address{
+
+    background-color: white;
+    width: 100%;
+    height: 55%;
+
+
+}
+
+.adcontent{
+
+    padding: 5%;
+    margin-left: 30%;
+}
+
+
+
+#holelist{
+
+margin-top: 1.8%;
+    background-color: navajowhite;
+
+
+}
+
+
+
+
+.button{
+  margin-top: 20px;
+  display: flex;
+  margin-left: 14.2%;
+}
+
+
+#map {
+    height:70%;
+    width: 50%;
+    margin: 0 auto;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 300px;
+    margin-top: 50px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+//margin: 0 auto;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+.selectcourse{
+    margin-left: 12px;
+    margin-top: 50px;
+}
+
+
+
+
+
+#myButton {
+    -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+    -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+    box-shadow:inset 0px -3px 7px 0px #29bbff;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+    background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+    background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+    background-color:#2dabf9;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #0b0e07;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    padding:9px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+
+}
+#myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+    background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+    background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+    background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+    background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+    background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+    background-color:#0688fa;
+}
+#myButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+
